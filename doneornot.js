@@ -44,9 +44,23 @@ const getRow = (board, i) => {
   return board[i];
 }
 
+const checkRows = (board) => {
+  for(let i = 0; i < board.length; i++){
+    if (!containsAll(getRow(board, i))){ return false };
+  }
+  return true;
+}
+
 const getColumn = (board, i) => {
   const column = board.map((el) => el[i]);
   return column;
+}
+
+const checkColumns = (board) => {
+  for(let i = 0; i < board.length; i++){
+    if (!containsAll(getColumn(board, i))){ return false };
+  }
+  return true;
 }
 
 const getRegion = (board, x, y) => {
