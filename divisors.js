@@ -14,5 +14,5 @@ const divisors = ( number ) => {
   }
   return output.length ? output : `${number} is prime`;
 }
-
+  
 console.log( divisors(12) );
