@@ -30,3 +30,4 @@ const iqTest = (numbers) => {
   })
   return oddIndices.length === 1 ? oddIndices.pop() : evenIndices.pop();
 }
+  
